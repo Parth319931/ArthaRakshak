@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from db import Base, engine
-from routes import chat
+from routes import chat, scam
 
 Base.metadata.create_all(bind=engine)
 
@@ -16,7 +16,7 @@ app.add_middleware(
 )
 
 app.include_router(chat.router, prefix="/api")
-
+app.include_router(scam.router, prefix="/api")
 @app.get("/")
 def root():
     return {"status": "ArthaRakshak backend is running"}
