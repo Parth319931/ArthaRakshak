@@ -32,3 +32,12 @@ class LoanSimulation(Base):
     total_interest = Column(Float)
     sip_final_value = Column(Float)
     created_at = Column(DateTime, default=datetime.utcnow)
+
+class ChatLog(Base):
+    __tablename__ = "chat_logs"
+    __table_args__ = {'extend_existing': True}
+    id = Column(Integer, primary_key=True, index=True)
+    user_message = Column(String)
+    ai_response = Column(String)
+    language = Column(String, default="en")
+    created_at = Column(DateTime, default=datetime.utcnow)

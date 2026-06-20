@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import ScamCheck from './pages/ScamCheck'
 import CashFlowSimulator from './pages/CashFlowSimulator'
+import VoiceAssistant from './pages/VoiceAssistant'
 
 function Home() {
   return (
@@ -18,12 +19,14 @@ function App() {
         <Link to="/" className="font-semibold text-teal-700">ArthaRakshak</Link>
         <Link to="/scam-check" className="text-gray-600 hover:text-teal-700">Scam Check</Link>
         <Link to="/cash-flow" className="text-gray-600 hover:text-teal-700">Cash-Flow Simulator</Link>
+        <Link to="/voice" className="text-gray-600 hover:text-teal-700">Voice Assistant</Link>
       </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/scam-check" element={<ScamCheck />} />
         <Route path="/cash-flow" element={<CashFlowSimulator />} />
+        <Route path="/voice" element={<VoiceAssistant />} />
       </Routes>
     </BrowserRouter>
   )
