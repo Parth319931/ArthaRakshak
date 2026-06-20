@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import ScamCheck from './pages/ScamCheck'
+import CashFlowSimulator from './pages/CashFlowSimulator'
 
 function Home() {
   return (
@@ -16,11 +17,13 @@ function App() {
       <nav className="bg-white border-b border-gray-200 px-6 py-4 flex gap-6">
         <Link to="/" className="font-semibold text-teal-700">ArthaRakshak</Link>
         <Link to="/scam-check" className="text-gray-600 hover:text-teal-700">Scam Check</Link>
+        <Link to="/cash-flow" className="text-gray-600 hover:text-teal-700">Cash-Flow Simulator</Link>
       </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/scam-check" element={<ScamCheck />} />
+        <Route path="/cash-flow" element={<CashFlowSimulator />} />
       </Routes>
     </BrowserRouter>
   )
