@@ -69,7 +69,7 @@ function VoiceAssistant() {
 
   return (
     <div className="max-w-2xl mx-auto p-6">
-      <h1 className="text-2xl font-semibold text-gray-800 mb-2">Voice Assistant</h1>
+      <h1 className="font-display text-2xl text-slate-800 mb-2">Voice Assistant</h1>
       <p className="text-gray-500 mb-6">Ask a financial question by voice or text, in your own language.</p>
 
       <div className="mb-4">

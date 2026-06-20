@@ -55,7 +55,7 @@ function CashFlowSimulator() {
 
   return (
     <div className="max-w-3xl mx-auto p-6">
-      <h1 className="text-2xl font-semibold text-gray-800 mb-2">Cash-Flow & Loan Decision Simulator</h1>
+      <h1 className="font-display text-2xl text-slate-800 mb-2">Cash-Flow & Loan Decision Simulator</h1>
       <p className="text-gray-500 mb-6">See the real cost of a loan versus saving the same amount instead.</p>
 
       <div className="grid grid-cols-2 gap-4 mb-4">

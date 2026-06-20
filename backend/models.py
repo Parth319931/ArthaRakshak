@@ -41,3 +41,12 @@ class ChatLog(Base):
     ai_response = Column(String)
     language = Column(String, default="en")
     created_at = Column(DateTime, default=datetime.utcnow)
+
+class ProactiveAlert(Base):
+    __tablename__ = "proactive_alerts"
+
+    id = Column(Integer, primary_key=True, index=True)
+    alert_type = Column(String)
+    severity = Column(String)
+    message = Column(String)
+    created_at = Column(DateTime, default=datetime.utcnow)

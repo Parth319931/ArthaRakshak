@@ -62,7 +62,7 @@ function ScamCheck() {
 
   return (
     <div className="max-w-2xl mx-auto p-6">
-      <h1 className="text-2xl font-semibold text-gray-800 mb-2">Scam Check</h1>
+      <h1 className="font-display text-2xl text-slate-800 mb-2">Scam Check</h1>
       <p className="text-gray-500 mb-6">Paste a suspicious message or upload a screenshot to check if it's a scam.</p>
 
       <div className="flex gap-2 mb-4">
